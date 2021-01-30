@@ -1,0 +1,15 @@
+mutation CreatePost(
+  $title: String!
+  $description: String!
+  $imageUrl: String!
+) {
+  createPost(
+    post: { title: $title, description: $description, imageUrl: $imageUrl }
+  ) {
+    id
+    title
+    description
+    imageUrl
+    creationDate
+  }
+}

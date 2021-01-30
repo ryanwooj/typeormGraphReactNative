@@ -1,0 +1,13 @@
+query CurrentUser {
+  currentUser {
+    id
+    username
+    email
+    posts {
+      id
+      title
+      description
+      imageUrl
+    }
+  }
+}
